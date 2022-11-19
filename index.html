@@ -1,0 +1,46 @@
+<html>
+     <head>
+         <link rel="stylesheet" href="index.css">
+         <!-- script in head -->
+         <script>
+         function changePara(){
+             document.getElementById("paragraph").innerHTML = "Paragraph Changed.";
+         }
+         </script>
+     </head>
+     <body>
+        <h1>People entered:</h1>
+        <h2 id="count-el">0</h2>
+        <p id="paragraph">A Paragraph</p>
+        <button type="button" onclick="changePara()">Pchanger</button>
+
+        <hr>
+
+        <h4 id="heading">A heading</h4>
+        <button type="button" onclick="changeHeading()">Hchanger</button>
+
+
+        <!-- script in body -->
+        <script>
+        function changeHeading() {
+            document.getElementById("heading").innerHTML = "Heading Changed";
+        }
+
+        // using alert box to display data
+        // window.alert("Heading Changed Successfully");
+        </script>
+
+        <!-- external script -->
+        <script src="index.js"></script>
+        <!-- 
+            <script src="quadratic.js"></script>
+         --> 
+        <!-- Using document.write() after an HTML document is 
+        fully loaded, will delete all existing HTML,
+        it should only be used for testing -->
+
+        <hr>
+
+        <button onclick="document.write(5+5)">Test</button>
+     </body>
+</html>
