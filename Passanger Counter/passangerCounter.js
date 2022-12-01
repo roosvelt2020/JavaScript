@@ -12,6 +12,7 @@ function increment() {
 function save() {
     let countstr = count + " - "
     //textContent is used rather than innerText because, it shows even elements that are non human readable, like spaces
-    saveEl.innerText = saveEl.textContent + countstr
-    console.log(count)
+    saveEl.textContent += countstr
+    countEl.textContent = 0
+    count = 0
 }
