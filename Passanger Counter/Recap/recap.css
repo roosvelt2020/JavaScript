@@ -1,0 +1,12 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+#shoe1 {
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+
+#error {
+    color: red;
+}
